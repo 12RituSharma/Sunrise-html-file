@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    
+    <style>
+        :root{
+            --main-color:crimson;
+            --head-font:segoe;
+            --p-font:Verdana;
+        }
+         *{
+            color: purple;
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            /* font-family: var(---p-font); */
+            background: slategrey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #Karuna{
+            border: 0px solid black;
+            background: white;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #Header{
+            background:var(--main-color);
+            height: 100px;
+            color: aliceblue;
+        }
+        #Header h1{
+            padding:40px 0 0 20px;
+
+        }
+        #Menu{
+            background: lightsalmon;
+        }
+        #Menu ul{
+            margin:0;
+            padding: 0;
+        }
+        #Menu li{
+            display: inline-block;
+        }
+        #Menu li a{
+            display: block;
+            padding: 10px 14px;
+            text-decoration: none;
+            color: black;
+        }
+        #Menu li a:hover{
+            background:var(--main-color);
+            color: white;
+        }
+        #Content{
+            width: 800px;
+            float: left;
+            min-height: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            --m-color : blue;
+            color:var(--m-color);
+        }
+        #content *{
+            color: ;
+        }
+        #Content a{
+            color:red;
+            cursor: pointer;
+        }
+        #sidebar{
+            background: lightseagreen;
+            float: right;
+            height: 550px;
+            width: 200px;
+        }
+        #sidebar a{
+            text-decoration: none;
+            color: black;
+            font-family: var(---p-font);
+
+        }
+        #footer{
+            background:var(--main-color);
+            clear: both;
+            padding: 5px 10px;
+            text-align: right;
+            color:white;
+        }
+        @media screen and (max-width:1020px){
+            #Karuna{
+                width: 800px;
+            }
+            #Content{
+                width: 80%;
+            }
+            #sidebar{
+                width: 18%;
+            }
+        }
+        @media screen and (max-width:810px){
+            #Karuna{
+                width: 500px;
+            }
+            #Content{
+                width: 34%;
+            }
+            #sidebar{
+                width: 29%;
+            }
+        }
+        @media screen and (max-width:710px){
+            #Karuna{
+                width: auto;
+            }
+            #Content{
+                width: 100%;
+                float: none;
+            }
+            #sidebar{
+                width: 100%;
+                float: none;
+            }
+            #Header h1{
+                width: 100%;
+                /* border: 1px solid black; */
+                text-align: center;
+                transition:  400ms;
+            padding:40px 0 0 0px;
+            /* text-align: center; */
+            font-family: var(--head-font);
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+            
+        }
+        ::-webkit-scrollbar-track{
+            background-color: brown;
+            width: 20px;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 9999px;
+            background-color: aquamarine;
+        }
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+            
+        }
+        ::-webkit-scrollbar-track{
+            background-color: brown;
+            width: 20px;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 9999px;
+            background-color: aquamarine;
+        }
+      #Menu ul li a:nth-child(n):hover{
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        padding: 10px 9px;
+        /* transition: 400ms; */
+      }
+      #sidebar ul li a:nth-child(n):hover{
+        border-left: 5px solid black;
+        border-right: 5px solid black;
+        padding: 10px 9px;
+        color: crimson;
+        font-family: Arial, Helvetica, sans-serif;
+        background: peachpuff;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="Karuna">
+        <div id="Header">
+            <h1>Karuna Shechen India</h1>
+            
+        </div>
+        <div id="Menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+ </ul>
+        </div>
+        <div id="Content">
+            <h2>WiZARD-TECH Computer Academy</h2>
+            <a href=""> WiZARD-TECH Computer Academy (Bodhgaya)-824231</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor corrupti et consectetur illo praesentium laborum, porro sint eligendi explicabo eveniet tempora vero necessitatibus at dolore vel fugit mollitia suscipit!</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            learncoding@copyright 2023.
+        </div>
+
+</body>
+</html>

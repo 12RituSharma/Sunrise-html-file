@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes Function</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            font-size: 37px;
+            margin: 200px 0 0 50px;
+        }
+        h1{
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+        p:hover::after{
+            content: attr(data-caption);
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ritu : CSS Attributes Function</h1>
+    <p class="test" data-caption="Ritu">Karuna-Shechen India</p>
+</body>
+</html>

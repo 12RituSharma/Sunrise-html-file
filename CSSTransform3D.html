@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : transform-3D</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .base{
+            width: 350px;
+            height: 250px;
+            background: gray;
+            font-size: 19px;
+            text-align:center;
+            margin: 100px 0 0 100px;
+        }
+        #box{
+            width: 350px;
+            height: 250px;
+            background: tomato;
+            transform: perspective(300px)rotateX(60deg) scaleZ(1) ;
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Ritu : CSS transform-3D</h1>
+   
+    <div class="base">
+        <div id="box">
+            Ritu Raj kumari
+        </div>
+    </div>
+</body>
+</html>

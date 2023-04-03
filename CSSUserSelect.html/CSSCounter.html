@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COunter</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            counter-reset: karuna-shechen 0;
+        }
+        p{
+            font-size: 35px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        h1{
+            color: blue;
+        }
+        h2::before{
+            content: "Chapter " counter(karuna-shechen,lower-alpha ) " : ";
+            counter-increment: karuna-shechen 1;
+            color: white;
+            background: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ritu : CSS Counter-Increment</h1>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore veritatis minus placeat omnis rem laudantium eligendi modi? Fuga, perspiciatis nisi eum nihil dolorum iste iusto neque est dicta obcaecati.</p>
+    
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore veritatis minus placeat omnis rem laudantium eligendi modi? Fuga, perspiciatis nisi eum nihil dolorum iste iusto neque est dicta obcaecati.</p>
+    
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore veritatis minus placeat omnis rem laudantium eligendi modi? Fuga, perspiciatis nisi eum nihil dolorum iste iusto neque est dicta obcaecati.</p>
+    
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore veritatis minus placeat omnis rem laudantium eligendi modi? Fuga, perspiciatis nisi eum nihil dolorum iste iusto neque est dicta obcaecati.</p>
+</body>
+</html>

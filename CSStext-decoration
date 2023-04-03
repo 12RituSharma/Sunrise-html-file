@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-decoration-line: underline;
+            text-decoration-color: crimson;
+            text-decoration-style: solid;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 10px;
+           
+        }
+        #test{
+            width: 500px;
+            padding: 10px;
+            margin: 0 auto;
+            border: 2px solid currentColor;
+            color: blue;
+        }
+        #test h2{
+            border-bottom: 2px solid currentColor;
+        }
+        #test a{
+            color: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Text-Decoration-Thickness</h1>
+    <div id="test">
+        <h2>About CSS </h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem facilis magnam voluptate quos aspernatur, cupiditate tenetur illum quis, consequatur voluptatibus atque esse ex amet. Suscipit tenetur maxime qui inventore?</p>
+        <a href="#"> Readmore</a>
+    </div>
+</body>
+</html>

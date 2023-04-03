@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element Selectors</title>
+    <style>
+        body{
+            font: 22px;padding: 10px 0 0 20px;
+        }
+        p{
+            font-size: 37px;
+            margin-top: 200px;
+        }
+        p::before{
+            content: "Karuna Shechen";
+            background: red;
+            color: aqua;
+        }
+        p::after{
+            content: "is a non-profit governmental organization in India";
+            background: wheat;
+            color: purple;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1> Ritu : ::after & ::before Selectors</h1>
+    <p>Learn Web Design from us.</p>
+</body>
+</html>

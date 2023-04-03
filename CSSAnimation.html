@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #eee;
+        }
+
+        .Card{
+            width: 300px;
+            line-height: 300px;
+            /* position: absolute; */
+            top: 50%;
+            left: 50%;
+            /* line-height: 300px; */
+            /* margin: -150px; */
+            background: white;
+            color: #03446A;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            animation-name: Shechen;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+           animation-delay: 2s;
+           animation-timing-function: steps(10);
+
+
+            /* animation: Shechen 2s 2 alternate-reverse ; */
+        
+        }
+        @keyframes Shechen{
+            0%{border-radius:0%;box-shadow: 20rem 10rem 1rem gray; background-color: yellow; color: antiquewhite;}
+        
+            50%{background-color: red;box-shadow: 20rem 10rem 1rem gray;margin-left: 10rem; color: blue;}
+            75%{background-color: blue;box-shadow: 20rem 10rem 1rem gray;margin-left: 10rem; color: whitesmoke}
+            100%{border-radius:60%; background-color: yellow; box-shadow: 20rem 10rem 1rem gray;margin-left: 50rem ; color: #eee;}     
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <h1>Ritu : CSS Animation</h1>
+    <div class="Card">Karuna Shechen</div>
+</body>
+</html>

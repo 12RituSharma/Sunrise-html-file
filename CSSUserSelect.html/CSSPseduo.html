@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS : Pseduo classes Selectors</title>
+    <style>
+        body{
+            font: 19px/25px arial; padding: 10px 0 0 20px;
+        }
+        h1{
+            font-size: 28px; margin-bottom: 35px;
+        }
+       p:not(.test){
+        color: crimson;
+       }
+
+       ul a:link{
+        color: green;
+       }
+        ul a:hover{
+            color: brown;
+        }
+        h1:hover{
+             color: crimson;
+             cursor: pointer;;
+        }
+
+        ul a:active{
+            color: pink;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1> Ritu : CSS Pseduo Classes Selectors</h1>
+    <ul id="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Ritu</a></li>
+       
+
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate quaerat odit sapiente fugit eum aliquid labore vitae esse ad quae minima, iure culpa, optio, placeat nisi laudantium est error.</p>
+ <div></div>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem est recusandae atque veritatis maiores magni, ipsa eligendi libero dolor tenetur itaque sed maxime beatae quia quas pariatur, voluptatem deleniti quaerat!</p>
+    <div></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reiciendis nostrum tempora corrupti voluptatum facere inventore atque earum iusto laborum ex, voluptate quae fugit error, similique necessitatibus iure expedita assumenda?</p>
+    <div></div>
+    </ul>
+    <ul id="list-two">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing </li>
+
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum minus repudiandae ipsum quae voluptatibus. Cumque repudiandae velit, minima saepe, repellendus, explicabo amet voluptas modi eos laudantium soluta eum incidunt nostrum.</p>
+
+    </ul>
+</body>
+</html>
